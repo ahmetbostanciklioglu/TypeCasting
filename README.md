@@ -4,8 +4,7 @@
 
 
 **Type casting:**
-
-
+```
 class SuperClass { }
 class SubClass1: SuperClass { }
 
@@ -18,22 +17,21 @@ class SubClass2: SuperClass {
 
 let objects = [SubClass1(), SubClass2(), SubClass1(), SubClass2()]
 
-
 for object in objects {
     if let name = object as? SubClass2 {
         name.nameMethod()
     }
 }
+```
 
-
-
+```
 var stringProperty = "Alex"
 if let property = stringProperty as? String {
     print("\(stringProperty)")
 }
+```
 
-
-
+```
 class SuperClass3 {
     var property = 3
 }
@@ -52,3 +50,4 @@ let superObject4 = SuperClass4()
 if let superClassObject5 = superObject4 as? SubClass4 {
     print("The distance is \(superClassObject5.property).")
 }
+```
